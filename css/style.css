@@ -1,35 +1,97 @@
-__container {
-    border: 0.8rem solid red;
+:root {
+    --background-1: #313638;
+
+    --background-2: #f06543;
+    --background-3: #b3b3b3;
+    --main-text: #232323;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #444444;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1rem;
+
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+header {
     justify-content: center;
-    align-items: center;
+    font-size: 1.5rem;
 
-    position: relative;
+    height: 10vh;
+    padding: 1.5rem;
 
-    width: auto;
-    height: auto;
+    color: white;
+    background-color: #313638;
+}
 
-    margin: auto;
-    padding: auto;
+/* main */
+
+main {
+    display: flex;
+    flex-grow: 1;
 
 }
 
-
-__items {
-    border: 0.8rem solid blue;
+main nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    background-color: var(--background-2);
+    color: white;
+    font-size: 1.5rem;
+
+    width: 40vw;
+    padding: 1rem;
+
+}
+
+main nav p:hover {
+    color: var(--background-1);
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main article h1 {
+    text-decoration: underline;
+
+}
+
+main article h1:hover {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+    background-color: #b3b3b3;
+    color: white;
 
-    position: relative;
+    padding: 1.5rem;
+    height: 10vh;
 
-    width: auto;
-    height: auto;
-
-    margin: auto;
-    padding: auto;
-
+    font-size: 1.5rem;
 }
